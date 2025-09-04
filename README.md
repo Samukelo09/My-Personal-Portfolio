@@ -44,4 +44,4 @@ A responsive personal portfolio website showcasing my skills, projects, and expe
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Samukelo09/portfolio-website.git
+   git clone https://github.com/Samukelo09/my-personal-portfolio.git
