@@ -1,13 +1,13 @@
 var tablinks = document.getElementsByClassName("tab-link");
 var tabcontents = document.getElementsByClassName("tab-contents");
-function opentab(tabname) {
+function opentab(tabname, element) {
     for (var tablink of tablinks) {
         tablink.classList.remove("active-link");
     }
     for (var tabcontent of tabcontents) {
         tabcontent.classList.remove("active-tab");
     }
-    event.currentTarget.classList.add("active-link");
+    element.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
 
@@ -34,4 +34,5 @@ fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         form.reset();
     })
     .catch(error => console.error('Error!', error.message));
+
 })
