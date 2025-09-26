@@ -1,0 +1,81 @@
+﻿/* ===================== */
+/* Fancy animations area */
+/* ===================== */
+
+
+/* Keyframes */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes glow { 0% { box-shadow: 0 0 0px rgba(4,99,41,0.0);} 50% { box-shadow: 0 8px 24px rgba(4,99,41,0.35);} 100% { box-shadow: 0 0 0px rgba(4,99,41,0.0);} }
+@keyframes float { 0%, 100% { transform: translateY(0);} 50% { transform: translateY(-6px);} }
+
+
+/* On-load reveals (respect reduced motion below) */
+#header .intro { animation: fadeUp 0.8s ease both 0.2s; }
+.aboutCol1 { animation: fadeUp 0.8s ease both 0.15s; }
+.aboutCol2 { animation: fadeUp 0.8s ease both 0.3s; }
+.services-list div { animation: fadeUp 0.8s ease both 0.3s; }
+.work { animation: fadeUp 0.8s ease both 0.35s; }
+.contact-left { animation: fadeUp 0.8s ease both 0.2s; }
+.contact-right { animation: fadeUp 0.8s ease both 0.35s; }
+
+
+/* Button shimmer/glow on hover */
+.seebtn:hover { animation: glow 1.4s ease-in-out; }
+
+
+/* Floating icons when card hovered */
+.services-list div:hover .icon-center { animation: float 2s ease-in-out infinite; }
+
+
+/* Portfolio tile micro-interactions */
+.work:hover .layer h3, .work:hover .layer p, .work:hover .layer a { animation: fadeUp 0.5s ease both; }
+
+
+/* Reduced motion: disable animations */
+@media (prefers-reduced-motion: reduce) {
+#header .intro,
+.aboutCol1,
+.aboutCol2,
+.services-list div,
+.work,
+.contact-left,
+.contact-right { animation: none !important; }
+.seebtn:hover { animation: none !important; }
+.services-list div:hover .icon-center { animation: none !important; }
+}
+
+/* Scroll-reveal utility */
+.reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity .6s ease, transform .6s ease;
+}
+
+.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal {
+    will-change: opacity, transform;
+}
+
+/* Typewriter caret */
+.typewriter::after {
+    content: '▁';
+    margin-left: 4px;
+    animation: caret 1s step-end infinite;
+}
+
+@keyframes caret {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .typewriter::after {
+        animation: none !important;
+    }
+}
