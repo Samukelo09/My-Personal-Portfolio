@@ -1,367 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
+<head>
+    <title>Samukelo Mkhize — Portfolio</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/portfolioStyle.css" />
-    <script
-      src="https://kit.fontawesome.com/6510349c0b.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+    <meta name="description" content="Samukelo Mkhize — Software developer & AI/ML enthusiast. Projects, services, and contact details." />
 
-  <body>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="CSS/portfolioStyle.css" />
+
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/6510349c0b.js" crossorigin="anonymous"></script>
+</head>
+<body>
     <div id="header">
-      <div class="container">
-        <nav>
-          <div id="title">
-            <h1 id="late"><i class="fa-solid fa-code"></i> Late Dreamer</h1>
-            <p>like 3 stripes, impossible is nothing</p>
-          </div>
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Service</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="intro">
-          <h1>
-            Hallo there, <br />
-            I'm <span>Samukelo Mkhize </span>from the 
-            other side of the world.
-          </h1>
+        <div class="container">
+            <nav>
+                <div id="title">
+                    <h1 id="late"><i class="fa-solid fa-code" aria-hidden="true"></i> Late Dreamer</h1>
+                    <p>like 3 stripes, impossible is nothing</p>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" aria-label="Close menu" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" aria-controls="sidemenu" aria-expanded="false" aria-label="Open menu" onclick="openmenu()"></i>
+            </nav>
+            <div class="intro">
+                <h1>
+                    Hello there, <br />
+                    I'm <span class="typewriter" data-text="Samukelo Mkhize">Samukelo Mkhize</span> from the
+                    other side of the world.
+                </h1>
+            </div>
         </div>
-      </div>
     </div>
+
+
     <!-----------------about--------------->
     <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="aboutCol1">
-            <img src="images/about.jpg" alt="About Me" />
-          </div>
-          <div class="aboutCol2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-                I am a Computer Science Honours student at the University of KwaZulu-Natal 
-                with a strong interest in software development, artificial intelligence, data 
-                science, and system implementation. I have hands-on experience in building 
-                real-world solutions using technologies such as .NET, ASP.NET, Python, Java, 
-                C#, C++ SQL Server, Power BI, and machine learning libraries. As a tutor and 
-                project collaborator, I enjoy helping others learn while continuously expanding my 
-                technical skills. I’m passionate about solving complex problems and developing
-                scalable, intelligent systems that have a real-world impact.
-            </p>
-            <div class="tab-titles">
-              <p class="tab-link active-link" onclick="opentab('skills', this)">
-                <br />Skills
-              </p>
-              <p class="tab-link" onclick="opentab('experience', this)">
-                <br />Experience
-              </p>
-              <p class="tab-link" onclick="opentab('education', this)">
-                <br />Education
-              </p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-                <ul>
-                    <li>
-                        <span>Back-end Development</span><br />I specialize in backend development with
-                        expertise in Java, C++, C#, and Python. I excel in designing efficient server-side
-                        logic, optimizing databases, and integrating with front-end components.
-                        My strong grasp of data structures, algorithms, and system architecture ensures
-                        scalable and high-quality solutions.
-                    </li>
-                    <li>
-                        <span>Data</span><br />Experienced in data engineering, analysis, and data
-                        science. I am skilled in building data pipelines, performing analytical
-                        tasks, and deriving insights to supportdecision-making and intelligent systems.
-                    </li>
-                    <li>
-                        <span>Machine Learning/Artificial Intelligence</span><br />I am a proficient
-                        Machine Learning and AI specialist with a strong background in computer science.
-                        I have experience in developing and deploying machine learning models using
-                        Python and libraries such as TensorFlow and scikit-learn. My expertise includes
-                        data preprocessing, feature engineering, and model evaluation. I am skilled in
-                        applying statistical methods and algorithms to solve real-world problems.
-                    </li>
-                    <li>
-                        <span>Database Management</span><br />I have hands-on experience designing,
-                        implementing, and optimizing databases using SQL Server and MySQL. I am
-                        skilled in data modeling, query optimization, data integrity, security,
-                        and performance tuning, with the ability to manage large datasets efficiently.
-                    </li>
-                    <li>
-                        <span>Cloud & DevOps</span><br />
-                        Familiar with deploying applications on cloud platforms such as AWS and Azure.
-                        I have experience using version control (Git), CI/CD pipelines, and containerization
-                        tools like Docker for streamlined development and deployment processes.
-                    </li>
-                    <li>
-                        <span>Software Engineering & System Design</span><br />
-                        Strong foundation in software engineering principles, including object-oriented design,
-                        modular programming, and system architecture. Skilled in planning, designing, and
-                        implementing robust and maintainable software systems.
-                    </li>
-                </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-                <ul>
-                    <li>
-                        <span>
-                            07/2023 - Current<br />Undergraduate Tutor & Demonstrator
-                        </span><br>
-                        Tutored first-, second-, and third-year Computer Science students
-                        in modules such as Java Programming, Artificial Intelligence, and
-                        Databases. Provided one-on-one and group academic support, assisted
-                        with practical sessions, and helped students build foundational and
-                        advanced understanding of programming concepts and systems.
+        <div class="container">
+            <div class="row">
+                <div class="aboutCol1 reveal">
+                    <img src="images/about.jpg" alt="Portrait of Samukelo Mkhize" loading="lazy" />
+                </div>
+                <div class="aboutCol2 reveal">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a Computer Science Honours student at the University of KwaZulu-Natal
+                        with a strong interest in software development, artificial intelligence, data
+                        science, and system implementation. I have hands-on experience in building
+                        real-world solutions using technologies such as .NET, ASP.NET, Python, Java,
+                        C#, C++, SQL Server, Power BI, and machine learning libraries. As a tutor and
+                        project collaborator, I enjoy helping others learn while continuously expanding my
+                        technical skills. I’m passionate about solving complex problems and developing
+                        scalable, intelligent systems that have a real-world impact.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="opentab('skills', this)"><br />Skills</p>
+                        <p class="tab-link" onclick="opentab('experience', this)"><br />Experience</p>
+                        <p class="tab-link" onclick="opentab('education', this)"><br />Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Back-end Development</span><br />I specialize in backend development with
+                                expertise in Java, C++, C#, and Python. I excel in designing efficient server-side
+                                logic, optimizing databases, and integrating with front-end components.
+                                My strong grasp of data structures, algorithms, and system architecture ensures
+                                scalable and high-quality solutions.
+                            </li>
+                            <li>
+                                <span>Data</span><br />Experienced in data engineering, analysis, and data
+                                science. I am skilled in building data pipelines, performing analytical
+                                tasks, and deriving insights to support decision-making and intelligent systems.
+                            </li>
+                            <li>
+                                <span>Machine Learning/Artificial Intelligence</span><br />I am a proficient
+                                Machine Learning and AI specialist with a strong background in computer science.
+                                I have experience in developing and deploying machine learning models using
+                                Python and libraries such as TensorFlow and scikit-learn. My expertise includes
+                                data preprocessing, feature engineering, and model evaluation. I am skilled in
+                                applying statistical methods and algorithms to solve real-world problems.
+                            </li>
+                            <li>
+                                <span>Database Management</span><br />I have hands-on experience designing,
+                                implementing, and optimizing databases using SQL Server and MySQL. I am
+                                skilled in data modeling, query optimization, data integrity, security,
+                                and performance tuning, with the ability to manage large datasets efficiently.
+                            </li>
+                            <li>
+                                <span>Cloud & DevOps</span><br />
+                                Familiar with deploying applications on cloud platforms such as AWS and Azure.
+                                I have experience using version control (Git), CI/CD pipelines, and containerization
+                                tools like Docker for streamlined development and deployment processes.
+                            </li>
+                            <li>
+                                <span>Software Engineering & System Design</span><br />
+                                Strong foundation in software engineering principles, including object-oriented design,
+                                modular programming, and system architecture. Skilled in planning, designing, and
+                                implementing robust and maintainable software systems.
+                            </li>
+                        </ul>
+                    </div>
 
-                    </li>
-                    <li>
-                        <span>01/2024 - 02/2024<br />QYF Virtual Internship </span><br>
-                        Completed a data-focused internship involving real-world case studies
-                        from sponsors including Absa, FirstRand/FNB, and Nedbank. Gained
-                        practical exposure to problem framing, data exploration,
-                        interpretation, modeling, and visualization. Our group received strong
-                        feedback for exceeding expectations in key areas such as stakeholder
-                        understanding, data handling, and teamwork. Sponsor highlights
-                        included well-structured analytical reporting (Absa), comprehensive
-                        discussions and EDA (FirstRand), and desirable solutions for climate
-                        risk (Nedbank). This experience strengthened my applied data analysis
-                        and communication skills in a collaborative setting.
-                        <a href="files/SamukeloMkhizeQYF.pdf" download>
-                            <i class="fa-solid fa-download"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <span>02/2024 - 11/2024<br>Applied systems implementation </span><br>
-                        As part of a team project, we successfully developed and delivered a complete
-                        system comprising a Windows application using .NET, a web application using
-                        ASP.NET, interactive reports using Power BI, and a centralized data store
-                        using Microsoft SQL Server. Through this project, I gained hands-on experience
-                        in requirements gathering, business analysis, solution design, configuration,
-                        testing, data migration, change management, project management, and stakeholder
-                        communication. This experience significantly strengthened my ability to design,
-                        implement, and manage end-to-end enterprise solutions.<br />
-                        <a href="https://github.com/Samukelo09/Pro-Health-Website" target="_blank">
-                            Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a><br />
-                        <a href="https://github.com/Samukelo09/Pro-Health-System" target="_blank">
-                            App
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <span>03/2025 – Present<br />Honours Research: Water Pipeline Leak Prediction</span><br>
-                        Developing a deep learning model to predict water pipeline leakage in Ethekwini
-                        using historical data sourced from Umgeni Water. The project involves data
-                        preprocessing, model design, and evaluation. Focused on infrastructure
-                        problem-solving, with implementation in Python and TensorFlow. Supervised by
-                        Prof. Okuthe Paul Kogeda.
-                    </li>
-                    <li>
-                        <span>03/2025 - 06/2025<br />Machine Translation</span><br>
-                        Developed a character-level neural machine translation model using Python, Keras, and NumPy.
-                        Trained the model to convert sentences from English to French using LSTM layers.
-                        Included data preprocessing, tokenization, and sequence modeling.
-                        <a href="https://github.com/Samukelo09/Machine-Translation" target="_blank">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <span>03/2025 - 05/2025<br />Cloud Computing Ontology Project</span><br>
-                        Designed an OWL 2 DL ontology representing cloud service models (IaaS, PaaS, SaaS),
-                        deployment types, performance metrics, and optimization patterns. Modeled real-world
-                        instances including AWS and Azure services. Focused on semantic interoperability
-                        and structured knowledge representation.
-                        <a href="https://github.com/Samukelo09/Cloud-Computing-Ontology" target="_blank">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <span>04/2025 - 06/2025<br />Coin Recognition</span><br>
-                        Developed a machine learning-based coin recognition system that identifies and classifies
-                        different coin denominations. The project involved image preprocessing, feature extraction,
-                        and implementing classification algorithms to achieve accurate recognition. Utilized Python
-                        and relevant ML libraries for model training and evaluation.
-                        <a href="https://github.com/Samukelo09/Coin-Recognition" target="_blank">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <span>06/2025<br />Microsoft Azure Data Fundamentals (DP-900)</span><br>
-                        Completed the Microsoft Azure Data Fundamentals course offered by Mecer Inter-Ed. Covered
-                        essential data concepts, core Azure data services, relational and non-relational databases,
-                        data analytics, and governance. This certification enhanced my understanding of how to work
-                        with data in cloud environments, especially within the Microsoft ecosystem.
-                        <a href="files/Samukelo_Mkhize_MS_DP900T00.pdf" download>
-                            <i class="fa-solid fa-download"></i>
-                        </a>
-                    </li>
-                </ul>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>07/2023 - Current<br />Undergraduate Tutor & Demonstrator</span><br>
+                                Tutored first-, second-, and third-year Computer Science students
+                                in modules such as Java Programming, Artificial Intelligence, and
+                                Databases. Provided one-on-one and group academic support, assisted
+                                with practical sessions, and helped students build foundational and
+                                advanced understanding of programming concepts and systems.
+                            </li>
+                            <li>
+                                <span>01/2024 - 02/2024<br />QYF Virtual Internship</span><br>
+                                Completed a data-focused internship involving real-world case studies
+                                from sponsors including Absa, FirstRand/FNB, and Nedbank. Gained
+                                practical exposure to problem framing, data exploration,
+                                interpretation, modeling, and visualization. Our group received strong
+                                feedback for exceeding expectations in key areas such as stakeholder
+                                understanding, data handling, and teamwork. Sponsor highlights
+                                included well-structured analytical reporting (Absa), comprehensive
+                                discussions and EDA (FirstRand), and desirable solutions for climate
+                                risk (Nedbank). This experience strengthened my applied data analysis
+                                and communication skills in a collaborative setting.
+                                <a href="files/SamukeloMkhizeQYF.pdf" target="_blank" rel="noopener noreferrer" aria-label="View QYF Internship PDF in a new tab">
+                                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <span>02/2024 - 11/2024<br>Applied Systems Implementation</span><br>
+                                As part of a team project, we successfully developed and delivered a complete
+                                system comprising a Windows application using .NET, a web application using
+                                ASP.NET, interactive reports using Power BI, and a centralized data store
+                                using Microsoft SQL Server. Through this project, I gained hands-on experience
+                                in requirements gathering, business analysis, solution design, configuration,
+                                testing, data migration, change management, project management, and stakeholder
+                                communication. This experience significantly strengthened my ability to design,
+                                implement, and manage end-to-end enterprise solutions.<br />
+                                <a href="https://github.com/Samukelo09/Pro-Health-Website" target="_blank" rel="noopener noreferrer">
+                                    Website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a><br />
+                                <a href="https://github.com/Samukelo09/Pro-Health-System" target="_blank" rel="noopener noreferrer">
+                                    App <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <span>03/2025 – Present<br />Honours Research: Water Pipeline Leak Prediction</span><br>
+                                Developing a deep learning model to predict water pipeline leakage in Ethekwini
+                                using historical data sourced from Umgeni Water. The project involves data
+                                preprocessing, model design, and evaluation. Focused on infrastructure
+                                problem-solving, with implementation in Python and TensorFlow. Supervised by
+                                Prof. Okuthe Paul Kogeda.
+                            </li>
+                            <li>
+                                <span>03/2025 - 06/2025<br />Machine Translation</span><br>
+                                Developed a character-level neural machine translation model using Python, Keras, and NumPy.
+                                Trained the model to convert sentences from English to French using LSTM layers.
+                                Included data preprocessing, tokenization, and sequence modeling.
+                                <a href="https://github.com/Samukelo09/Machine-Translation" target="_blank" rel="noopener noreferrer" aria-label="Open Machine Translation repo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <span>03/2025 - 05/2025<br />Cloud Computing Ontology Project</span><br>
+                                Designed an OWL 2 DL ontology representing cloud service models (IaaS, PaaS, SaaS),
+                                deployment types, performance metrics, and optimization patterns. Modeled real-world
+                                instances including AWS and Azure services. Focused on semantic interoperability
+                                and structured knowledge representation.
+                                <a href="https://github.com/Samukelo09/Cloud-Computing-Ontology" target="_blank" rel="noopener noreferrer" aria-label="Open Cloud Computing Ontology repo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <span>04/2025 - 06/2025<br />Coin Recognition</span><br>
+                                Developed a machine learning-based coin recognition system that identifies and classifies
+                                different coin denominations. The project involved image preprocessing, feature extraction,
+                                and implementing classification algorithms to achieve accurate recognition. Utilized Python
+                                and relevant ML libraries for model training and evaluation.
+                                <a href="https://github.com/Samukelo09/Coin-Recognition" target="_blank" rel="noopener noreferrer" aria-label="Open Coin Recognition repo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <span>06/2025<br />Microsoft Azure Data Fundamentals (DP-900)</span><br>
+                                Completed the Microsoft Azure Data Fundamentals course offered by Mecer Inter-Ed. Covered
+                                essential data concepts, core Azure data services, relational and non-relational databases,
+                                data analytics, and governance. This certification enhanced my understanding of how to work
+                                with data in cloud environments, especially within the Microsoft ecosystem.
+                                <a href="files/Samukelo_Mkhize_MS_DP900T00.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Azure DP-900 certificate in a new tab">
+                                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>03/2021 - 11/2024<br />BSc in Computer Science & Information Technology</span> <br>
+                                <ol class="ukzn">
+                                    <li>Calculus and Linear Algebra</li>
+                                    <li>Discrete Mathematics</li>
+                                    <li>Object-Oriented Programming</li>
+                                    <li>Systems Analysis and Design</li>
+                                    <li>Computer Organisation and Architecture</li>
+                                    <li>Statistical Methods</li>
+                                    <li>Data Structures and Algorithms</li>
+                                    <li>Database Management</li>
+                                    <li>Computer Systems</li>
+                                    <li>Artificial Intelligence</li>
+                                    <li>Theory of Computation</li>
+                                    <li>Applied Systems Implementation</li>
+                                </ol>
+                                <a href="files/BScComp&IT.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Qualification PDF in a new tab">
+                                    <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <br />
+                            <br />
+                            <li>
+                                <span>02/2025 - 11/2025<br />BSc Honours in Computer Science</span> <br>
+                                <ol class="ukzn">
+                                    <li>Honours Research Project</li>
+                                    <li>Ontologies and Knowledge Bases</li>
+                                    <li>Image Processing and Computer Vision</li>
+                                    <li>Machine Learning</li>
+                                    <li>Internet of Things</li>
+                                    <li>Quantum Computing</li>
+                                    <li>Artificial Intelligence</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
             </div>
-            <div class="tab-contents" id="education">
-                <ul>
-                    <li>
-                        <span>03/2021 - 11/2024<br />BSc in Computer Science & Information Technology</span> <br>
-                        <ol id="ukzn">
-                            <li>Calculus and Linear Algebra</li>
-                            <li>Discrete Mathematics</li>
-                            <li>Object-Oriented Programming</li>
-                            <li>Systems Analysis and Design</li>
-                            <li>Computer Organisation and Architecture</li>
-                            <li>Statistical Methods</li>
-                            <li>Data Structures and Algorithms</li>
-                            <li>Database Management</li>
-                            <li>Computer Systems</li>
-                            <li>Artificial Intelligence</li>
-                            <li>Theory of Computation</li>
-                            <li>Applied Systems Implementation</li>
-                        </ol>
-                    </li><br /><br />
-                    <li>
-                        <span>02/2025 - 11/2025<br />BSc Honours in Computer Science</span> <br>
-                        <ol id="ukzn">
-                            <li>Honours Project</li>
-                            <li>Ontologies and Knowledge Bases</li>
-                            <li>Image Processing and Computer Vision</li>
-                            <li>Machine Learning</li>
-                            <li>Internet of Things</li>
-                            <li>Quantum Computing</li>
-                            <li>Artificial Intelligence</li>
-                        </ol>
-                    </li>
-                </ul>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-
     <!-----------------services--------------->
-    <div id="services">
-      <div class="container">
+    <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-          <div>
-             <i class="fa-solid fa-server fa-3x icon-center"></i>
-             <h2>Back-End Development</h2>
-            <p>
-                I design and develop efficient, scalable, and secure server-side applications
-                using languages such as Java, C++, C#, and Python. I ensure smooth integration
-                with front-end components and optimized database interactions.
-            </p>
-            <br />
-            <a href="#">Learn More</a>
-          </div>
-          <div>
-              <i class="fa-solid fa-database fa-3x icon-center"></i>
-            <h2>Database Management</h2>
-            <p>
-                I specialize in SQL Server and MySQL, offering services in database design,
-                data modeling, query optimization, and ensuring data integrity and security
-                for robust application performance.
-            </p>
-            <br />
-            <a href="#">Learn More</a>
-          </div>
-          <div>
-              <i class="fa-solid fa-robot fa-3x icon-center"></i>
-              <h2>Machine Learning & AI</h2>
-              <p>
-                  I develop machine learning models using Python, TensorFlow, and scikit-learn
-                  for tasks like classification, prediction, and automation. My focus includes
-                  data preprocessing, model training, and performance evaluation.
-              </p>
-            <br />
-            <a href="#">Learn More</a>
-          </div>
+            <div class="reveal"
+                <i class="fa-solid fa-server fa-3x icon-center" aria-hidden="true"></i>
+                <h2>Back-End Development</h2>
+                <p>
+                    I design and develop efficient, scalable, and secure server-side applications
+                    using languages such as Java, C++, C#, and Python. I ensure smooth integration
+                    with front-end components and optimized database interactions.
+                </p>
+                <br />
+                <a href="#">Learn More</a>
+            </div>
+            <div class="reveal">
+                <i class="fa-solid fa-database fa-3x icon-center" aria-hidden="true"></i>
+                <h2>Database Management</h2>
+                <p>
+                    I specialize in SQL Server and MySQL, offering services in database design,
+                    data modeling, query optimization, and ensuring data integrity and security
+                    for robust application performance.
+                </p>
+                <br />
+                <a href="#">Learn More</a>
+            </div>
+            <div class="reveal">
+                <i class="fa-solid fa-robot fa-3x icon-center" aria-hidden="true"></i>
+                <h2>Machine Learning & AI</h2>
+                <p>
+                    I develop machine learning models using Python, TensorFlow, and scikit-learn
+                    for tasks like classification, prediction, and automation. My focus includes
+                    data preprocessing, model training, and performance evaluation.
+                </p>
+                <br />
+                <a href="#">Learn More</a>
+            </div>
         </div>
-      </div>
+    </div>
     </div>
 
     <!-----------------portfolio--------------->
-    <div id="portfolio">
-      <div class="container">
-        <h2 class="sub-title">My Work</h2>
-        <div class="work-list">
-          <div class="work">
-            <img src="images/savior.png">
+    <div class="work-list">
+        <div class="work reveal">
+            <img src="images/savior.png" alt="Savior project preview" loading="lazy">
             <div class="layer">
-              <h3>Savior</h3>
-              <p>The reports for my #rd year project</p>
-              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <h3>Savior</h3>
+                <p>The reports for my 3rd year project</p>
+                <a href="#" aria-label="Open project"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
             </div>
-          </div>
-          <div class="work">
-            <img src="images/rallsmoh1.jpg">
-            <div class="layer">
-              <h3>Rallsmoh</h3>
-              <p>24 hours at the campus</p>
-              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/rallsmoh2.jpg">
-            <div class="layer">
-              <h3>Rallsmoh</h3>
-              <p>COMP315 project</p>
-              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/thando_hadebe.jpg">
-            <div class="layer">
-              <h3>Thando</h3>
-              <p>She was practicing C#</p>
-              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-          </div>
         </div>
-        <a href="#" class="seebtn">See More</a>
-      </div>
+        <div class="work reveal">
+            <img src="images/rallsmoh1.jpg" alt="Rallsmoh — 24 hours at the campus" loading="lazy">
+            <div class="layer">
+                <h3>Rallsmoh</h3>
+                <p>24 hours at the campus</p>
+                <a href="#" aria-label="Open project"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="work reveal">
+            <img src="images/model_training.png" alt="Training curves for sentiment model" loading="lazy">
+            <div class="layer">
+                <h3>Sentiment Analysis</h3>
+                <p>DL model training</p>
+                <a href="#" aria-label="Open project"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="work reveal">
+            <img src="images/ane_agent.png" alt="Thando — personal agent UI" loading="lazy">
+            <div class="layer">
+                <h3>Thando</h3>
+                <p>My personal agent</p>
+                <a href="#" aria-label="Open project"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+        </div>
     </div>
+    <a href="#" class="seebtn">See More</a>
+    </div>
+    </div>
+
 
     <!-----------------contact--------------->
     <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h3 class="sub-title">Contact Me</h3>
-            <p><i class="fa-solid fa-envelope"></i> samkelomanager@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i> 078 504 6753</p>
-            <div class="social-icons">
-              <a href="https://x.com/samkelo_m_" target="_blank" class="x"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="https://www.instagram.com/samkelo_m_/" target="_blank" class="ig"><i class="fa-brands fa-instagram"></i></a>
-              <a href="https://www.facebook.com/samkelo.mkhize.3363334/" target="_blank" class="fb"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://www.linkedin.com/in/samukelo-mkhize-a83156253/" target="_blank" class="lin"><i class="fa-brands fa-linkedin"></i></a>
+        <div class="container">
+            <div class="row">
+                <div class="contact-left reveal">
+                    <h3 class="sub-title">Contact Me</h3>
+                    <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:samkelomanager@gmail.com">samkelomanager@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone" aria-hidden="true"></i> +27 78 504 6753</p>
+                    <div class="social-icons">
+                        <a href="https://x.com/samkelo_m_" target="_blank" rel="noopener noreferrer" class="x" aria-label="Open X profile"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/samkelo_m_/" target="_blank" rel="noopener noreferrer" class="ig" aria-label="Open Instagram profile"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/samukelo.mkhize.3363334/" target="_blank" rel="noopener noreferrer" class="fb" aria-label="Open Facebook profile"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/samukelo-mkhize-a83156253/" target="_blank" rel="noopener noreferrer" class="lin" aria-label="Open LinkedIn profile"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://personal-chatbot-9epgipaudegypjraq3qnun.streamlit.app/" target="_blank" rel="noopener noreferrer" class="chat" aria-label="Open personal chatbot"><i class="fa-solid fa-robot" aria-hidden="true"></i></a>
+                    </div>
+                    <a href="files/MkhizeCV.pdf" download class="seebtn sb">Download CV</a>
+                </div>
+                <div class="contact-right reveal">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+<textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="seebtn sb2">Submit</button>
+                    </form>
+                    <span id="statusMsg" role="status" aria-live="polite"></span>
+                </div>
             </div>
-            <a href="#" download class="seebtn sb">Download CV</a>
-          </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Emali" required>
-              <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
-              <button type="submit" class="seebtn sb2">Submit</button>
-            </form>
-            <span id="confirm"></span>
-          </div>
         </div>
-      </div>
-      <div class="copyright">
-        <p>Copyright © Samukelo M. Thank you for tuning in :)</p>
-      </div>
+        <div class="copyright">
+            <p>Copyright © Samukelo M. Thank you for tuning in :)</p>
+        </div>
     </div>
+
+
+    <!-- Scripts -->
     <script src="JS/portfolioFunction.js"></script>
-  </body>
+</body>
 </html>
-
-
