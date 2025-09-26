@@ -1,6 +1,5 @@
 # Portfolio Website
 
-![Portfolio Screenshot](images/about.jpg) <!-- Add a screenshot if available -->
 
 A responsive personal portfolio website showcasing my skills, projects, and experience as a Computer Science professional.
 
